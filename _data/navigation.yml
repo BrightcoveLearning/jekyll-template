@@ -5,30 +5,6 @@
   docs:
     - name: Learning Guide
       url: /get-started/learning-guide-bc-beacon.html
-    - name: Implementation Phases
-      url: /get-started/implementation-phases.html
-    - name: Creating Your Sitemap
-      url: /get-started/creating-your-site-map.html
-- section: Video Cloud Sync
-  url: /video-cloud-sync/
-  docs:
-    - name: Video Cloud Custom Fields
-      url: /video-cloud-sync/vc-custom-fields.html
-- section: Admin Console
-  url: /admin-console/
-  docs:
-    - name: Creating a Playlist
-      url: /admin-console/playlists.html
-    - name: Create Ad Config
-      url: /admin-console/advertisement.html
-    - name: Ad Configuration ID
-      url: /admin-console/vc-ad-config-id.html
-- section: Submitting Apps
-  url: /submitting-apps/
-  docs:
-    - name: Submitting Apps to Device Stores
-      url: /submitting-apps/submitting-device-apps-stores.html
-- section: References
   url: /references/
   docs:
     - name: Product Updates
@@ -37,3 +13,4 @@
       url: /references/glossary.html
     - name: Known Issues
       url: /references/known-issues.html
+# TODO correct and add additional sections/pages

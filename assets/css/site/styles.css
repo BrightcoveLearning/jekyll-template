@@ -293,12 +293,6 @@ p span.bcls-button {
   cursor: pointer;
 }
 
-input.gsc-search-button.gsc-search-button-v2 {
-  background-image: url(http://docs.brightcove.com/en/images/search_box_icon.png) !important;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-color: #666;
-}
 
 /* for collapsible sections */
 h2#expanderHead:before {
@@ -586,6 +580,12 @@ ul.menu {
   padding-top: 0;
   padding-bottom: 0;
   /* padding: .4rem; */
+}
+
+.search-bar {
+  margin-top: -1em;
+  padding-bottom: .8em;
+  padding-left: 16.7%;
 }
 
 .product-logo {
