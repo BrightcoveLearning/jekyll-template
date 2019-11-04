@@ -18,16 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# TODO change title
 title: Brightcove Beacon Documentation
 email: training@brightcove.com
+# TODO change description
 description: >- # this means to ignore newlines until "baseurl:"
   Brightcove Beacon provides video providers the environment for their customers to view videos without having a cable provider subscription.
 # baseurl: "" # the subpath of your site, e.g. /blog
+# TODO change description
 site_url: "https://beacon.support.brightcove.com"
 
 # Build settings
 # theme: minima
 
+#TODO change product
 product: Brightcove Beacon
 color: rgb(51, 51, 51)
 defaults:
@@ -38,64 +42,6 @@ defaults:
     values:
       layout: "page"
 # you should have a collection corresponding to each folder of docs
-collections:
-  getting_started:
-    output: true
-    order:
-      - index.html
-    title: Getting Started
-    relative_directory: /get-started
-    docs:
-      home:
-        relative_path: /get-started/index.html
-  video_cloud_sync:
-    output: true
-    order:
-      - index.html
-    title: Video Cloud Sync
-    relative_directory: /video-cloud-sync
-    docs:
-      home:
-        title: Video Cloud Sync Home
-        relative_path: /video-cloud-sync/index.html
-  admin_console:
-    output: true
-    order:
-      - index.html
-    title: Admin Console
-    relative_directory: /admin-console
-    docs:
-      home:
-        title: Admin Console Home
-        relative_path: /admin-console/index.html
-  submitting_apps:
-    output: true
-    order:
-      - index.html
-    title: Submitting Apps
-    relative_directory: /submitting_apps
-    docs:
-      home:
-        title: Submitting Apps Home
-        relative_path: /submitting_apps/index.html
-  references:
-    output: true
-    order:
-      - index.html
-      - product-updates.html
-      - known-issues.html
-    title: References
-    relative_directory: /references
-    docs:
-      home:
-        title: References Home
-        relative_path: /references/index.html
-      Product Updates:
-        title: Product Updates
-        relative_path: /references/product-updates.html
-      known_issues:
-        title: Known Issues
-        relative_path: /references/known-issues.html
 
 
 # Exclude from processing.
