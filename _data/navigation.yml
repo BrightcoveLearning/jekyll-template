@@ -1,18 +1,49 @@
 - section: Home
   url: /
-- section: Get Started
-  url: /get-started/
+- section: Getting Started
+  url: /getting-started/
   docs:
     - name: Learning Guide
-      url: /get-started/learning-guide-bc-beacon.html
+      url: /getting-started/learning-guide-bc-beacon.html
+    - name: Implementation Phases
+      url: /getting-started/implementation-phases.html
+    - name: Application Design Considerations
+      url: /getting-started/app-design-considerations.html
+    - name: Creating Your Application Design
+      url: /getting-started/creating-your-app-design.html
+- section: Syncing with Video Cloud
+  url: /syncing-with-video-cloud/
+  docs:
+    - name: Creating Video Cloud Custom Fields
+      url: /syncing-with-video-cloud/vc-custom-fields.html
+    - name: Forcing a Sync
+      url: /syncing-with-video-cloud/forcing-a-sync.html
+- section: Using Brightcove Beacon
+  url: /using-brightcove-beacon/
+  docs:
+    #- name: Creating a Playlist
+    #  url: /using-brightcove-beacon/playlists.html
+    - name: Creating a New Page
+      url: /using-brightcove-beacon/creating-a-page.html
+    - name: Adding a Carousel to a Page
+      url: /using-brightcove-beacon/adding-to-page.html
+    - name: Ad Configuration ID
+      url: /using-brightcove-beacon/vc-ad-config-id.html
+    - name: Creating an Ad Configuration
+      url: /using-brightcove-beacon/advertisement.html
+    - name: Using the Tools
+      url: /using-brightcove-beacon/tools.html
+- section: Creating Your Apps
+  url: /creating-your-apps/
+  docs:
+    - name: Submitting Device Apps to Stores
+      url: /creating-your-apps/submitting-device-apps-stores.html
+- section: References
   url: /references/
   docs:
-    - name: Product Updates
-      url: /references/product-updates.html
     - name: Glossary
       url: /references/glossary.html
     - name: Known Issues
       url: /references/known-issues.html
-# TODO correct and add additional sections/pages
-# TODO note that items appear in the order here, so adjust as necessary
-# TODO indentation in YAML is crucial and must be with spaces (not tabs!)
+    - name: Product Updates
+      url: /references/product-updates.html
