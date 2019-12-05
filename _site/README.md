@@ -1,1 +1,1 @@
-# beacon-support
+# jekyll-template
