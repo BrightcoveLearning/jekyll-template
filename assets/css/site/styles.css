@@ -857,13 +857,13 @@ ul.sidenav-subsubmenu {
 }
 
 .sidenav ul {
-  /* list-style: none; */
+  list-style: none;
 }
 
 .sidenav ul li {
-  /* margin-left: -2.5em; */
-  font-size: .9rem;
-  padding: 2px;
+  margin-left: -1rem;
+  /* font-size: .9rem; */
+  padding: .5rem;
 }
 
 .right-side-bar {
@@ -902,9 +902,9 @@ ul.sidenav-subsubmenu {
 
 
 #in_page_nav li {
-  margin-bottom:.5em;
+  margin-bottom:.6rem;
   color:rgb(11, 155, 179);
-  padding-left: 3px;
+  padding-left: .3rem;
 }
 
 #in_page_nav a {
@@ -954,7 +954,7 @@ h2 {
 
 h3 {
   color: rgb(68, 68, 68);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -1082,6 +1082,7 @@ right-side-bar {
   position: relative;
   vertical-align: top;
   min-width: 30%;
+  max-width: 30%;
 }
 
 .bcls-card-small h3 {

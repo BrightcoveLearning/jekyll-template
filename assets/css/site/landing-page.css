@@ -218,7 +218,7 @@
 .landing-page-body-wrapper {
   width: 100%;
   text-align: left;
-  display: inline-grid;
+  /* display: inline-grid; */
   grid-template-columns: auto auto auto;
   grid-gap: 2em 2em;
 }
