@@ -249,8 +249,7 @@ figcaption {
 }
 
 .bcls-button {
-  background-color: #409ca9;
-  border: 1px #a1a1a1 solid;
+  background-color: rgb(5, 155, 179);
   border-radius: .5em;
   color: #eee;
   cursor: pointer;
@@ -260,7 +259,7 @@ figcaption {
 }
 
 .bcls-button:hover {
-  background-color: #337d87;
+  background-color: rgb(5, 155, 179);
   border: 1px #ffd96e solid;
   color: #ffd96e;
 }
@@ -428,9 +427,9 @@ h2#expanderHead.changed:before {
   color:  rgb(204, 204, 204);
   left: 0;
   margin-top: 2em;
-  ;
+  padding-left: 20%;
   position: relative;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
@@ -979,10 +978,11 @@ footer {
   padding-left: 4em;
   position: relative;
   min-width: 100%;
+  text-align: left;
 }
 
 footer h2 {
-  font-size: 1.8rem;
+  font-size: 1rem;
   text-align: left;
   color: #f5f5f5;
 }
