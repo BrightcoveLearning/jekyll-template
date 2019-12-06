@@ -839,12 +839,20 @@ button.gsc-search-button
   color: inherit;
 }
 
-ul.sidenav-submenu {
-  /* list-style: none; */
+ul.sidenav-submenu li {
+  list-style: none;
+  padding: 1rem;
+  padding-left: 2rem;
+  margin-left: -1rem;
 }
-
 ul.sidenav-subsubmenu {
-  list-style-type: disc;
+  list-style-type: none;
+}
+ul.sidenav-subsubmenu li {
+  list-style: none;
+  padding: 1rem;
+  padding-left: 2rem;
+  margin-left: -1rem;
 }
 
 .sidenav-submenu a ::visited {
@@ -857,13 +865,13 @@ ul.sidenav-subsubmenu {
 }
 
 .sidenav ul {
-  list-style: none;
+  /* list-style: none; */
 }
 
 .sidenav ul li {
-  margin-left: -1rem;
-  /* font-size: .9rem; */
-  padding: .5rem;
+  /* margin-left: -2.5em; */
+  font-size: .9rem;
+  padding: 2px;
 }
 
 .right-side-bar {
@@ -902,9 +910,9 @@ ul.sidenav-subsubmenu {
 
 
 #in_page_nav li {
-  margin-bottom:.6rem;
+  margin-bottom:.5em;
   color:rgb(11, 155, 179);
-  padding-left: .3rem;
+  padding-left: 3px;
 }
 
 #in_page_nav a {
@@ -954,7 +962,7 @@ h2 {
 
 h3 {
   color: rgb(68, 68, 68);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -1064,14 +1072,15 @@ right-side-bar {
   display: inline-block;
   margin-right: 1em;
   margin-bottom: 1em;
-  min-height: 350px;
+  min-height: 275px;
   max-height: 350px;
   position: relative;
   vertical-align: top;
   width: 47%;
+  max-width: 47%;
 }
 
-.bcls-card-small, .landing-page-section {
+.bcls-card-small {
   padding: .7rem;
   border: 1px rgb(5, 155, 179) solid;
   cursor: pointer;
