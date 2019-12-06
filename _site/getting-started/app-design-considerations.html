@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <meta name="robots" content="noindex" />
-  <title>Implementation Phases</title>
+  <title>Application Design Considerations</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/site/styles.css">
   <link rel="stylesheet" href="/assets/css/site/prism.css">
@@ -32,9 +32,9 @@
       
       
       
-      <li class="breadcrumb-item"><a href="/get-started/">Getting Started</a></li>
+      <li class="breadcrumb-item"><a href="/getting-started/">Getting Started</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Implementation Phases</li>
+      <li class="breadcrumb-item active" aria-current="page">Application Design Considerations</li>
     </ol>
   </nav>
 </header>
@@ -155,135 +155,97 @@
 
 <article class="bcls-article">
 
-  <h1>Implementation Phases</h1>
-  <summary>In this topic, you will examine the phases of a Brightcove Beacon implementation.</summary>
-        <section class="bcls-section">
-          <h2 id="Introduction">Introduction</h2>
-          <p>In this document, a high-level look at the entire process of implementing Brightcove Beacon is provided. It will emphasize that you as a customer have a number of tasks to perform before meeting with a Brightcove representative to build
-            your device apps.</p>
-        </section>
-        <section class="bcls-section">
-          <h2 id="Overview">Overview</h2>
-          <p>In this section, the phases are introduced, briefly defined and the result of the phase is stated. Later in the document, checklists, where appropriate, are provided to help you prepare for each phase.</p>
-          <h3>Phase 1: Prepare for Brightcove Beacon Experience Creation</h3>
-          <p>Later in the Brightcove Beacon implementation process (Phase 4), you will build the Brightcove Beacon Experience. You will do this while working with a Brightcove representative. At this time you will need to have some design artifacts
-            ready, as well as decisions made on platforms to which you wish to deploy, monetization strategy, advertising strategy, etc.</p>
-          <p><strong>END RESULT</strong>: A collection of resources and strategies defined for use when meeting with a Brightcove representative to build the Brightcove Beacon Experience.</p>
-          <h3>Phase 2: Establish Relationships with 3rd Party Vendors</h3>
-          <p>There are numerous relationships with 3rd party vendors you need to establish before meeting with a Brightcove representative to build the Brightcove Beacon Experience. This would include contacting the vendors for the platforms to
-            which you choose to deploy an app, an advertising server provider, Stripe for online payments, etc. <em>It is VERY IMPORTANT that this process starts as early as possible as to not cause delays at time of device app submission.</em></p>
-          <p><strong>END RESULT</strong>: Accounts created with all desired 3rd party vendors for use when meeting with a Brightcove representative to build the Brightcove Beacon Experience.</p>
-          <h3>Phase 3: Add Content and Configure Your Brightcove Beacon Experience</h3>
-          <p>Here you will use the Brightcove Beacon Administrative Console to configure your experience. Here you will import media assets from Video Cloud, and add other content. Configuration of monetization and layout are also done.</p>
-          <p><strong>END RESULT</strong>: Via the Admin Console, content is added and configuration performed.</p>
-          <h3>Phase 4: Create Device Application(s) from Your Brightcove Beacon Experience</h3>
-          <p>You will work with a Brightcove representative to build the Brightcove Beacon Experience. The work done in Phases 1, 2 and 3 is utilized to create the experience. From the Brightcove Beacon Experience, the device apps are built.</p>
-          <p><strong>END RESULT</strong>: The device app files are created and available for submission to desired vendors/stores.</p>
-          <h3>Phase 5: Submit Your Device Application(s) to Corresponding Store(s)</h3>
-          <p>At this point you have the applications for your desired platforms in hand, as well as configuration performed, so you can now submit the applications.</p>
-          <p>END RESULT: Device apps appropriately submitted and viewers begin to use the apps on vendor approval.</p>
-        </section>
-        <section class="bcls-section">
-          <h2 id="Phases_timing">Phases timing</h2>
-          <p>Note that Phases 1 and 2 can and should be executed simultaneously.</p>
-          <figure class="bcls-figure">
-            <img class="bcls-image" src="//learning-services-media.brightcove.com/doc-assets/beacon/implementation-phases/phases.png" alt="">
-          </figure>
-          <p>Of course, once the device applications are launched, you can continue to configure and add content to Brightcove Beacon without having to resubmit your device applications to their respective stores.</p>
-        </section>
-        <section class="bcls-section">
-          <h2 id="Details_Phase_1">Details - Phase 1: Prepare for Brightcove Beacon Experience Creation</h2>
-          <p>Following are tasks to complete for Phase 1:</p>
-          <table class="bcls-table">
-            <tbody class="bcls-table__body">
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>Determine device app platforms required and any priority platforms</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>Determine monetization strategy</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>Determine if any custom user authentication services are needed</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>Obtain your logo in SVG format for all device specific specifications</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>Obtain your branded color(s) and logos</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>Attend Video Cloud training - Webinar or Training on Demand</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>Ingest media assets into Video Cloud; see the <a href="http://docs.brightcove.com/en/staging/beacon-drafts/video-cloud-custom-fields.html">Video Cloud Custom Fields</a> document for further details</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>Determine analytics requirements</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>Create/obtain translation files</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>Determine restricted geo-locations, if any</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>Create a site map for your the experience; see the <a href="http://docs.brightcove.com/en/staging/beacon-drafts/app-site-map.html">Creating Your Site Map</a> document for further details</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-        <section class="bcls-section">
-          <h2 id="Details_Phase_2">Details - Phase 2: Establish Relationships with 3rd Party Vendors</h2>
-          <p>Following are tasks to complete for Phase 2:</p>
-          <table class="bcls-table">
-            <tbody class="bcls-table__body">
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>Determine ad strategy and establish relationship with appropriate vendor</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>Establish relationship with Stripe for online payments</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>Set up store accounts and confirm credentials. Vendors could include but are not limited to:
-                  <ul>
-                    <li>Apple Developer Platform</li>
-                    <li>Google Developer Platform</li>
-                    <li>Amazon Developer Platform</li>
-                    <li>Roku Developer Platform</li>
-                    <li>Other Developer Platforms (e.g. Samsung, LG)</li>
-                  </ul>
-                  See the <a href="http://docs.brightcove.com/en/staging/beacon-drafts/bcb-submitting-apps-tabbed.html">Submitting Device Apps to Stores</a> for information and corresponding URLs for starting this process.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-        <section class="bcls-section">
-          <h2 id="Details_Phase_3">Details - Phase 3: Add Content and Configure Your Brightcove Beacon Experience</h2>
-          <p>It may be that in Phase 3 all configuration is done, all content is added, all users configured, but you may want to do further configuration and content addition before the apps are used. You can perform this additional work in this phase before the device app(s) go live. You will use the Brightcove Beacon Experience Administrative Console to perform further configuration.</p>
-        </section>
-        <section class="bcls-section">
-          <h2 id="Details_Phase_4">Details - Phase 4: Create Device Application(s) from Your Brightcove Beacon Experience</h2>
-          <p>This phase takes place with the assistance of Brightcove personnel. The assets, vendor relationships, defined strategies, etc. from the first three phases are used by the Brightcove representative to build and do initial configuration of the Brightcove Beacon Experience. From this collaboration, the actual device app files are generated from Brightcove Beacon.</p>
-        </section>
-        <section class="bcls-section">
-          <h2 id="Details_Phase_5">Details - Phase 5: Submit Your Device Application(s) to Corresponding Store(s)</h2>
-          <p> For each vendor for which you have a device app, you must submit the app to the corresponding store. In Phase 2 you previously established a relationship with the vendor’s platform, so in this phase you submit the app to begin the approval process. In the <a href="http://docs.brightcove.com/en/staging/beacon-drafts/bcb-submitting-apps-tabbed.html">Submitting Device Apps to Stores</a> document you will find specific steps and links to appropriate vendor documentation for help in the submission process.</p>
-        </section>
+<style media="screen">
+  pre {
+    font-size: 12px;
+  }
+</style>
+
+  <h1>Application Design Considerations</h1>
+  <summary>In this topic, you will learn about vendor restrictions for your app, as well as guidance for app content like <strong>Help</strong> pages.</summary>
+
+  <section class="bcls-section">
+    <h2 id="Introduction">Introduction</h2>
+    <p>The first section of this document lets you know restrictions some vendors have for your app. The vendors are listed with lists of restrictions following.</p>
+    <p>The rest of the document contains sections on content you should consider for inclusion in your application. For instance, what should your <strong>Help</strong> page look like, and what text should it contain.</p>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Vendor_design_restrictions">Vendor design restrictions</h2>
+    <p>Many vendors have some design restrictions that you cannot change. It is important to be aware of these issues so you do not spend time requesting a feature, or feature change, that is not allowed.</p>
+
+    <h3>Apple TV</h3>
+    <ul>
+      <li>The main menu will always be open when the app opens.</li>
+    </ul>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Help_pages">Help pages</h2>
+    <p>For your <strong>Help</strong> page, you will most likely at least want to give your customer a way to reach you. Here are two examples:</p>
+    <pre>
+    If you need help, please contact us through one of the following ways:
+
+    Chat at www.acmeone.tv
+
+    Facebook Messenger through official Fan Page: www.facebook.com/Acmeone
+
+    Instagram Direct through official Instagram profile: www.instagram.com/acmeone
+
+    Direct Message through official Twitter profile: www.twitter.com/Acmeone
+
+    Email: worker@acmeone.tv
+
+    Whatsapp: +55 (55) 55555-5555</pre>
+
+    <p>and</p>
+    <pre>
+Acmeone is a video streaming platform that enables users to watch live TV, movies and series over the internet.
+
+A user needs to download the Acmeone application in order to have access to the Acmeone platform.
+
+Once the Acmeone application has been downloaded, the Acmeone landing page will enable the user to register, login or explore Acmeone.
+
+Once the user completes registration or login (or enters Acmeone in explore mode), the user will be taken to the Acmeone home page.
+
+The Acmeone home page will present the main menu, where users will be able to:
+ *Watch Live TV
+ *Watch On Demand Movies
+
+Acmeone will also enable users to save favorites, rate and search for content.
+
+The Acmeone Settings section will enable users to review their account, change passwords, logout, set parental controls and change the language to/from Spanish and English.
+
+Thank you for being a valued Acmeone user.
+
+For additional help and support, please contact us using the following contact information:
+     Phone: 1-555-555-5555
+     Email: acmeonesupport@acmeone.com
+
+    </pre>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Password_recovery">Password recovery email</h2>
+    <p>You need to set the verbiage for the password recovery email. Here are two examples on which you can base your actual email:</p>
+    <pre>RECOVER TOKEN: ##RECOVER_CODE##
+
+If you experience any inconvenience please contact MY_COMPANY support at:
+
+Email: [my-company@myco.com|mailto:my-company@myco.com]</pre>
+<p>and</p>
+<pre>RECOVER TOKEN: ##RECOVER_CODE##
+
+If you experience any inconvenience please contact MY_COMPANY support at:
+
+[http://ww.myco.com/contact/contact-technical-help]
+
+or call our technical support department at (800) 334-0453.</pre>
+  <p>Note that <code>##RECOVER_CODE##</code> is a placeholder and is replaced by the actual code generated by Brightcove Beacon.</p>
+
+  </section>
+
+
 </article>
 
 <!-- complete bootstrap layout -->
@@ -301,7 +263,7 @@
 
 <hr>
 <div class="last-updated">
-  Page last updated on 05 December 2019
+  Page last updated on 06 December 2019
 </div>
 
 <footer class="bcls-footer" role="contentinfo">
