@@ -8,6 +8,7 @@ html {
 /* site styles */
 body, .body {
   font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
   counter-reset: figure 0 table 0 step 0;
   background-color: white;
   color: rgb(68, 68, 68);
@@ -23,6 +24,7 @@ body {
 .body {
   background-color: white;
   color: rgb(68, 68, 68);
+  font-size: 16px;
 }
 
 /* article should contain all content that we edit */
@@ -421,9 +423,9 @@ h2#expanderHead.changed:before {
 }
 
 .footer, .bcls-footer {
-  background-color: #626365;
+  background-color: rgb(51, 51, 51);
   bottom: 0;
-  color: #ffffff;
+  color:  rgb(204, 204, 204);
   left: 0;
   margin-top: 2em;
   ;
@@ -439,7 +441,7 @@ h2#expanderHead.changed:before {
 }
 
 footer i.fab, .footer a, .bcls-footer a {
-  color: #ffffff;
+  color:  rgb(204, 204, 204);
 }
 
 .field--item {
@@ -810,20 +812,22 @@ button.gsc-search-button
 
 .sidenav {
   /* overflow-y: scroll; */
-  font-size: smaller;
+  font-size: .8rem;
   color: rgb(136, 136, 136);
   padding-top: 1em;
 }
 
 .sidenav h5 {
   font-size: .9rem;
-  padding: 2px;
+  padding: .5rem;
   color: inherit;
+  min-width: 100%;
+  margin-left: 0;
+  padding-left: 1rem;
 }
 
 .sidenav h5 a {
-  font-size: .9rem;
-  padding: 2px;
+  font-size: .8rem;
   color: inherit;
 }
 
@@ -941,24 +945,24 @@ h5.landing-page-item-header {
 
 h1 {
   color: rgb(68, 68, 68);
-  font-size: 2.7rem;
+  font-size: 2.25rem;
 }
 
 h2 {
   color: inherit;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
 }
 
 h3 {
   color: rgb(68, 68, 68);
-  font-size: 1..7rem;
+  font-size: 1.3rem;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
 h4 {
   color: rgb(68, 68, 68);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 header {
@@ -1054,9 +1058,8 @@ right-side-bar {
 
 /* landing page sections */
 .bcls-card {
-  padding: 4%;
-  box-shadow: 0px 5px 15px 0 RGB(204, 204, 204);
-  -webkit-transition: -webkit-box-shadow 0.3s ease-in;
+  border: 1px rgb(5, 155, 179) solid;
+  padding: .5rem;
   cursor: pointer;
   display: inline-block;
   margin-right: 1em;
@@ -1064,28 +1067,21 @@ right-side-bar {
   min-height: 350px;
   max-height: 350px;
   position: relative;
-  transition: -webkit-box-shadow 0.3s ease-in;
-  transition: box-shadow 0.3s ease-in;
-  transition: box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
   vertical-align: top;
   width: 47%;
 }
 
-.bcls-card-small {
-  padding: 4%;
-  box-shadow: 0px 5px 15px 0 RGB(204, 204, 204);
-  -webkit-transition: -webkit-box-shadow 0.3s ease-in;
+.bcls-card-small, .landing-page-section {
+  padding: .7rem;
+  border: 1px rgb(5, 155, 179) solid;
   cursor: pointer;
   display: inline-block;
   margin-right: 1em;
   margin-top: 1em;
   min-height: 220px;
   position: relative;
-  transition: -webkit-box-shadow 0.3s ease-in;
-  transition: box-shadow 0.3s ease-in;
-  transition: box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
   vertical-align: top;
-  width: 30%;
+  min-width: 30%;
 }
 
 .bcls-card-small h3 {
