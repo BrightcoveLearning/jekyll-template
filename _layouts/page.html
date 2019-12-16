@@ -3,5 +3,8 @@
 {% include navigation.html %}
 {{ content }}
 {% include updated.html %}
+<div class="last-updated">
+  Page last updated on {{ page.time | date_to_long_string }}
+</div>
 {% include footer.html %}
 {% include foot.html %}
