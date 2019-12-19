@@ -4,6 +4,7 @@ var BCLS_site = (function(window, document) {
     i,
     iMax,
     currentLink,
+    currentLinkNextSib,
     parentNodeName,
     p1,
     p2,
@@ -11,7 +12,8 @@ var BCLS_site = (function(window, document) {
     pSib,
     pChild,
     pNextSib,
-    p1NextSib;
+    p1NextSib,
+    p1NextSibList;
 
 // utilities for adding/removing classes
 function hasClass(el, name) {
@@ -31,32 +33,44 @@ function removeClass(el, name)
   iMax = all_sidenav_links.length;
   for (i = 0; i < iMax; i++) {
     currentLink = all_sidenav_links[i];
+    currentLinkNextSib = currentLink.nextElementSibling;
     if (currentLink.getAttribute("href") === href) {
       addClass(currentLink.parentElement, 'bcls-active');
       if (currentLink.getAttribute("href") !== "/") {
         p1 = currentLink.parentElement;
         p1NextSib = p1.nextElementSibling;
+        if (p1NextSib && p1NextSib.firstElementChild) {
+          p1NextSibList = p1NextSib.firstElementChild.nextElementSibling;
+        }
         p2 = p1.parentElement;
         p3 = p2.parentElement;
+        p4 = p3.parentElement;
+        console.log('currentLink', currentLink);
         console.log('p1', p1);
         console.log('p2', p2);
         console.log('p3', p3);
+        console.log('p4', p4);
         console.log('p1NextSib', p1NextSib);
+        console.log('p1NextSibList', p1NextSibList);
+        console.log('currentLinkNextSib', currentLinkNextSib);
         parentNodeName = p1.nodeName;
         pSib = p1.firstChild;
         if (p1.nodeName === 'H5') {
           pNextSib = p1.nextElementSibling;
           pNextSib.removeAttribute('style');
-        } else if (p1.nodeName === 'LI' && p1NextSib === null && p3.nodeName == 'UL') {
+        } else if (currentLinkNextSib && p2.nodeName === 'UL' && p3.nodeName === 'NAV' && currentLinkNextSib.nodeName == "UL") {
           p2.removeAttribute('style');
-          p3.removeAttribute('style');
-        } else if (p1.nodeName === 'LI' && p1NextSib === null) {
+          currentLinkNextSib.removeAttribute('style');
+        } else if (p1.nodeName === 'LI' && p4.nodeName === 'UL') {
           p2.removeAttribute('style');
-        } else if (p1.nodeName === 'LI' && p1NextSib.nodeName === 'UL') {
+          p4.removeAttribute('style');
+        } else if (p1.nodeName === 'LI' && p2.nodeName === 'UL' && p4.nodeName === 'UL') {
+          p2.removeAttribute('style');
+          p4.removeAttribute('style');
+        } else if (p1NextSibList && p1.nodeName === 'LI' && p1NextSibList.nodeName === 'UL') {
             console.log('p1NextSib nodename', p1NextSib.nodeName);
             p2.removeAttribute('style');
-            p1NextSib.removeAttribute('style');
-            console.log('p1NextSib', p1NextSib);
+            p1NextSibList.removeAttribute('style');
         } else if (p2.nodeName === 'UL' && p3.nodeName === 'UL') {
           p2.removeAttribute('style');
           p3.removeAttribute('style');
