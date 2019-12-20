@@ -1084,6 +1084,13 @@ right-side-bar {
   margin-bottom: 20px;
 }
 
+/* icomoon */
+i[class^='icon-']::before {
+  font-family: icomoon;
+  font-size: 3rem;
+  color: rgb(27, 185, 214);
+}
+
 /* landing page sections */
 .bcls-card {
   border: 1px rgb(19, 160, 183) solid;
