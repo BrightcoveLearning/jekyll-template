@@ -18,18 +18,26 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Brightcove Beacon Documentation
+title: Brightcove Zencoder Documentation
 email: training@brightcove.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Brightcove Beacon provides video providers the environment for their customers to view videos without having a cable provider subscription.
+  Zencoder offers a fast and reliable transcoding service for video and audio files, as well as live streams. It can produce outputs for the web and a wide variety of devices, and can easily be integrated with your CMS and other applications.
 # baseurl: "" # the subpath of your site, e.g. /blog
-site_url: "https://beacon.support.brightcove.com"
+site_url: "https://zencoder.support.brightcove.com"
 
 # Build settings
 # theme: minima
 
-product: Brightcove Beacon
+# local server (for "jekyll serve") will be localhost:{PORT number below}
+port: 8000
+
+
+product: Zencoder
 color: rgb(51, 51, 51)
+product_color: rgb(65, 196, 181)
+product_icon: "logo-bc-zencoder.svg"
+search_id: "017969773216783359937:6sd3di5mwuw"
+feedbackify_id: "15027"
 defaults:
   -
     scope:
@@ -41,11 +49,6 @@ defaults:
 plugins:
   - jekyll-last-modified-at
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
@@ -60,4 +63,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
