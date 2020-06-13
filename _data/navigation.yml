@@ -63,7 +63,7 @@
     - name: 'Live API Release Notes'
       url: 'https://live.support.brightcove.com/release-notes/live-api-release-notes.html'
 - section: 
-  name: 'Developer Support'
+  name: 'Support'
   url: '/support/'
   icon: '<i class="far fa-question-circle"></i>'
   docs:
@@ -73,3 +73,5 @@
       url: '/support/opening-case-with-brightcove-support.html'
     - name: 'Viewing the Brightcove System Status Page'
       url: '/support/viewing-brightcove-system-status-page.html'
+    - name: 'Brightcove Answers'
+      url: '/support/brightcove-answer.html'
